@@ -29,10 +29,10 @@ public class Cast {
 
     @Override
     public String toString() {
-        return "\nCast{" +
-                "\n    actors=" + actors +
-                "\n    role='" + role + '\'' +
-                "}";
+        return "\n======================================" +
+                "\nCast" +
+                "\n actors: " + actors +
+                "\n role: '" + role + '\'';
     }
 }
 

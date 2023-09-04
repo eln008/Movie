@@ -71,6 +71,7 @@ public class Main {
 
         while (true) {
             try {
+                System.out.println("================Commands================");
                 System.out.println("Выберите действие:");
                 System.out.println("1) Получить все фильмы");
                 System.out.println("2) Найти фильм по имени актера");
@@ -83,6 +84,7 @@ public class Main {
                 System.out.println("9) Сортировать фильмы по году");
                 System.out.println("10) Сортировать фильмы по режиссеру");
                 System.out.println("0) Выйти");
+                System.out.println("===================================================");
 
                 int choice = scanner.nextInt();
 
@@ -131,3 +133,6 @@ public class Main {
         }
     }
 }
+
+
+//        System.out.println(findableService.findMovieByGenre("Comedy")); //как сделать так чтобы jy vju yf[jlbn yfpdfybz с малленькими буквами

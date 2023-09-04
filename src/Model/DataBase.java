@@ -44,11 +44,12 @@ public class DataBase {
 
     @Override
     public String toString() {
-        return "\nDataBase{" +
+        return "\n======================================" +
+                "\nDataBase{" +
                 "\n    movies=" + movies +
                 "\n    casts=" + casts +
                 "\n    directors=" + directors +
-                "}";
+                "\n";
     }
 
 }

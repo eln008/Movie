@@ -29,10 +29,11 @@ public class Director {
 
     @Override
     public String toString() {
-        return "\nDirector{" +
-                "\n    dirName='" + dirName + '\'' +
-                "\n    moviesDirected=" + moviesDirected +
-                "}";
+        return "\n======================================" +
+                "\nDirector" +
+                "\n    dirName: '" + dirName + '\'' +
+                "\n    moviesDirected: " + moviesDirected +
+                "\n";
     }
 
 }
