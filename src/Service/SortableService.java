@@ -26,9 +26,11 @@ public class SortableService implements Sortable {
         List<Movie> movies = database.getMovies();
         if (choice == 1) {
             movies.sort(Comparator.comparing(Movie::getTitle));
+            for (Movie movie : movies) {
+                System.out.println(movie);
+            }
         } else if (choice == 2) {
             movies.sort(Comparator.comparing(Movie::getTitle).reversed());
-
             for (Movie movie : movies) {
                 System.out.println(movie);
             }
@@ -53,13 +55,16 @@ public class SortableService implements Sortable {
         List<Movie> movies = database.getMovies();
         if (choice == 1) {
             movies.sort(Comparator.comparing(Movie::getReleaseYear));
+            for (Movie movie : movies) {
+                System.out.println(movie);
+            }
         } else if (choice == 2) {
             movies.sort(Comparator.comparing(Movie::getReleaseYear).reversed());
-
-        for (Movie movie : movies) {
-            System.out.println(movie);
+            for (Movie movie : movies) {
+                System.out.println(movie);
+            }
         }
-        }else {
+        else {
             System.err.println("Некорректный выбор выерите 1 или 2");
         }
     }catch (InputMismatchException e) {
@@ -80,12 +85,16 @@ public class SortableService implements Sortable {
             List<Director> directors = database.getDirectors();
             if (choice == 1) {
                 directors.sort(Comparator.comparing(Director::getDirName));
+                for (Director d : directors) {
+                    System.out.println(d);
+                }
             } else if (choice == 2) {
                 directors.sort(Comparator.comparing(Director::getDirName).reversed());
-            for (Director d : directors) {
-                System.out.println(d);
+                for (Director d : directors) {
+                    System.out.println(d);
+                }
             }
-            }else {
+            else {
                 System.err.println("Некорректный выбор выерите 1 или 2");
             }
 
