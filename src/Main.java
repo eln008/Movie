@@ -131,15 +131,3 @@ public class Main {
         }
     }
 }
-
-//        System.out.println(findableService.getAllMovies());
-//        System.out.println(findableService.findMovieByActorName("Brad"));  //находит только один фильм
-//        System.out.println(findableService.findMovieByFullNameOrPartName("Matrix"));
-//        System.out.println(findableService.findMovieByYear(2000));
-//        System.out.println(findableService.findMovieByDirector("Steven"));
-//        System.out.println(findableService.findMovieByGenre("Comedy")); //как сделать так чтобы с малленькими буквами мог искать
-//        System.out.println(findableService.findMovieByRole("Indiana"));
-//
-//        sortableService.sortByMovieName();
-//        sortableService.sortByYear();
-//        sortableService.sortByDirector();
