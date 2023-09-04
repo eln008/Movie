@@ -8,15 +8,16 @@ import java.util.List;
 public interface Findable {
     List<Movie> getAllMovies();
 
-    Movie findMovieByFullNameOrPartName(String name);
+    List<Movie> findMovieByFullNameOrPartName(List<Movie>movies);
 
-    Movie findMovieByActorName( String name);
+    List<Movie> findMovieByActorName(List<Movie>movies);
 
-    Movie findMovieByYear(long num);
+    List<Movie> findMovieByYear(List<Movie>movies);
 
-    List<Model.Movie> findMovieByDirector(String name);
+    List<Model.Movie> findMovieByDirector(List<Movie>movies);
 
-    Movie findMovieByGenre(String name);
+    List<Movie> findMovieByGenre(List<Movie> movies);
 
-    Movie findMovieByRole(String role);
+    List<Movie> findMovieByRole( List<Movie> movies);
+
 }

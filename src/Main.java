@@ -78,9 +78,10 @@ public class Main {
                 System.out.println("4) Найти фильм по году выпуска");
                 System.out.println("5) Найти фильм по режиссеру");
                 System.out.println("6) Найти фильм по жанру");
-                System.out.println("7) Сортировать фильмы по названию");
-                System.out.println("8) Сортировать фильмы по году");
-                System.out.println("9) Сортировать фильмы по режиссеру");
+                System.out.println("7) Найти фильм по role");
+                System.out.println("8) Сортировать фильмы по названию");
+                System.out.println("9) Сортировать фильмы по году");
+                System.out.println("10) Сортировать фильмы по режиссеру");
                 System.out.println("0) Выйти");
 
                 int choice = scanner.nextInt();
@@ -90,27 +91,30 @@ public class Main {
                         System.out.println(findableService.getAllMovies());
                         break;
                     case 2:
-                        System.out.println(findableService.findMovieByActorName("Brad"));
+                        System.out.println(findableService.findMovieByActorName(movies));
                         break;
                     case 3:
-                        System.out.println(findableService.findMovieByFullNameOrPartName("Matrix"));
+                        System.out.println(findableService.findMovieByFullNameOrPartName(movies));
                         break;
                     case 4:
-                        System.out.println(findableService.findMovieByYear(2000));
+                        System.out.println(findableService.findMovieByYear(movies));
                         break;
                     case 5:
-                        System.out.println(findableService.findMovieByDirector("Steven"));
+                        System.out.println(findableService.findMovieByDirector(movies));
                         break;
                     case 6:
-                        System.out.println(findableService.findMovieByGenre("Comedy"));
+                        System.out.println(findableService.findMovieByGenre(movies));
                         break;
                     case 7:
-                        sortableService.sortByMovieName();
+                        System.out.println(findableService.findMovieByRole(movies));
                         break;
                     case 8:
-                        sortableService.sortByYear();
+                        sortableService.sortByMovieName();
                         break;
                     case 9:
+                        sortableService.sortByYear();
+                        break;
+                    case 10:
                         sortableService.sortByDirector();
                         break;
                     case 0:
@@ -127,3 +131,15 @@ public class Main {
         }
     }
 }
+
+//        System.out.println(findableService.getAllMovies());
+//        System.out.println(findableService.findMovieByActorName("Brad"));  //находит только один фильм
+//        System.out.println(findableService.findMovieByFullNameOrPartName("Matrix"));
+//        System.out.println(findableService.findMovieByYear(2000));
+//        System.out.println(findableService.findMovieByDirector("Steven"));
+//        System.out.println(findableService.findMovieByGenre("Comedy")); //как сделать так чтобы с малленькими буквами мог искать
+//        System.out.println(findableService.findMovieByRole("Indiana"));
+//
+//        sortableService.sortByMovieName();
+//        sortableService.sortByYear();
+//        sortableService.sortByDirector();
