@@ -119,10 +119,10 @@ public class Main {
                         throw new IllegalArgumentException("Некорректный выбор действия.");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Ошибка: Некорректный ввод. Введите число.");
+                System.err.println("Ошибка: Некорректный ввод. Введите число.");
                 scanner.nextLine();
             } catch (IllegalArgumentException e) {
-                System.out.println("Ошибка: " + e.getMessage());
+                System.err.println("Ошибка: " + e.getMessage());
             }
         }
     }

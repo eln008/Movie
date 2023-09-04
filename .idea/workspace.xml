@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba5b429a-bc4b-42fc-bc72-97ce2935cabe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Movie.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inteface/DataBaseInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inteface/Findable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Inteface/Sortable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Cast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/DataBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/DataBaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/FindableService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/SortableService.java" afterDir="false" />
+    <list default="true" id="ba5b429a-bc4b-42fc-bc72-97ce2935cabe" name="Changes" comment="сщ">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +47,19 @@
       <option name="presentableId" value="Default" />
       <updated>1693747679058</updated>
     </task>
+    <task id="LOCAL-00001" summary="сщ">
+      <option name="closed" value="true" />
+      <created>1693802979196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693802979196</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="сщ" />
+    <option name="LAST_COMMIT_MESSAGE" value="сщ" />
   </component>
 </project>
