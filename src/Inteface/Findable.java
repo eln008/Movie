@@ -1,17 +1,22 @@
 package Inteface;
 
+import Model.Movie;
+
+import javax.swing.plaf.multi.MultiViewportUI;
+import java.util.List;
+
 public interface Findable {
-    List<Movie>getAllMovies(List<Movie>movies);
+    List<Movie> getAllMovies();
 
-    void findMovieByFullNameOrPartName(List<Movie>movies);
+    Movie findMovieByFullNameOrPartName(String name);
 
-    void findMovieByActorName(List<Movie>movies);
+    Movie findMovieByActorName( String name);
 
-    void findMovieByYear(List<Movie>movies);
+    Movie findMovieByYear(long num);
 
-    void findMovieByDirector(List<Movie>movies);
+    List<Model.Movie> findMovieByDirector(String name);
 
-    void findMovieByGenre(List<Movie>movies);
+    Movie findMovieByGenre(String name);
 
-    void findMovieByRole(List<Movie>movies);
+    Movie findMovieByRole(String role);
 }

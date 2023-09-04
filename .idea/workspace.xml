@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba5b429a-bc4b-42fc-bc72-97ce2935cabe" name="Changes" comment="" />
+    <list default="true" id="ba5b429a-bc4b-42fc-bc72-97ce2935cabe" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Movie.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inteface/DataBaseInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inteface/Findable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inteface/Sortable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Cast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/DataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Director.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Model/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/DataBaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/FindableService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/SortableService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,6 +50,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "onboarding.tips.debug.path": "C:/Users/Asus/IdeaProjects/Movie/src/Main.java"
   }
 }]]></component>
@@ -33,16 +64,5 @@
       <updated>1693747679058</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

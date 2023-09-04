@@ -1,9 +1,13 @@
 package Inteface;
 
+import Model.Movie;
+
+import java.util.List;
+
 public interface Sortable {
-    void sortByMovieName(List<Movie>movies);
+    void sortByMovieName();
 
-    void sortByYear(List<Movie>movies);
+    void sortByYear();
 
-    void sortByDirector(List<Movie>movies);
+    void sortByDirector();
 }

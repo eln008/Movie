@@ -1,2 +1,4 @@
-package Inteface;public interface DataBaseInterface {
+package Inteface;
+
+public interface DataBaseInterface {
 }
