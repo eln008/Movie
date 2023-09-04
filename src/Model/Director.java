@@ -31,9 +31,8 @@ public class Director {
     public String toString() {
         return "\n======================================" +
                 "\nDirector" +
-                "\n    dirName: '" + dirName + '\'' +
-                "\n    moviesDirected: " + moviesDirected +
-                "\n";
+                "\n dirName: " + dirName +
+                "\n moviesDirected: " + moviesDirected ;
     }
 
 }

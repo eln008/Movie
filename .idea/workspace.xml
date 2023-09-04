@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba5b429a-bc4b-42fc-bc72-97ce2935cabe" name="Changes" comment="сщop">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="ba5b429a-bc4b-42fc-bc72-97ce2935cabe" name="Changes" comment="сщopp">
       <change beforePath="$PROJECT_DIR$/src/Model/Cast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Cast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/DataBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Director.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Model/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Movie.java" afterDir="false" />
     </list>
@@ -91,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693833100973</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="сщopp">
+      <option name="closed" value="true" />
+      <created>1693834352028</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693834352028</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -100,6 +105,7 @@
     <MESSAGE value="сщoj" />
     <MESSAGE value="сщoT" />
     <MESSAGE value="сщop" />
-    <option name="LAST_COMMIT_MESSAGE" value="сщop" />
+    <MESSAGE value="сщopp" />
+    <option name="LAST_COMMIT_MESSAGE" value="сщopp" />
   </component>
 </project>

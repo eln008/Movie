@@ -32,7 +32,7 @@ public class Cast {
         return "\n======================================" +
                 "\nCast" +
                 "\n actors: " + actors +
-                "\n role: '" + role + '\'';
+                "\n role: " + role;
     }
 }
 

@@ -68,7 +68,8 @@ public class Movie {
 
     @Override
     public String toString() {
-        return "\n======================================" +
+        return
+                "\n======================================" +
                 "\nMovie" +
                 " \ntitle: '" + title + '\'' +
                 ",\nreleaseYear: " + releaseYear +
