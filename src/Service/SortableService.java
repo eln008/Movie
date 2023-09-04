@@ -4,6 +4,8 @@ import Inteface.Sortable;
 import Model.DataBase;
 import Model.Director;
 import Model.Movie;
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Comparator;
 import java.util.List;
@@ -18,50 +20,81 @@ public class SortableService implements Sortable {
     @Override
     public void sortByMovieName() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Выберите порядок: 1) от A до Z \n2) от Z до A ");
+        try{
+        System.out.println("Выберите порядок: \n1) от A до Z \n2) от Z до A ");
         int choice = scan.nextInt();
         List<Movie> movies = database.getMovies();
         if (choice == 1) {
             movies.sort(Comparator.comparing(Movie::getTitle));
         } else if (choice == 2) {
             movies.sort(Comparator.comparing(Movie::getTitle).reversed());
-        }
 
-        for (Movie movie : movies) {
-            System.out.println(movie);
+            for (Movie movie : movies) {
+                System.out.println(movie);
+            }
+        }
+        else {
+                System.err.println("Некорректный выбор выерите 1 или 2");
+            }
+        }catch (InputMismatchException e) {
+            System.err.println("Ошибка: Некорректный ввод. Введите число.");
+            scan.nextLine();
+        } catch (IllegalArgumentException e) {
+            System.err.println("Ошибка: " + e.getMessage());
         }
     }
 
     @Override
     public void sortByYear() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Выберите порядок: 1) 1,2,3,4 \n2) 4,3,2,1 ");
+        try{
+        System.out.println("Выберите порядок: \n1) 1,2,3,4 \n2) 4,3,2,1 ");
         int choice = scan.nextInt();
         List<Movie> movies = database.getMovies();
         if (choice == 1) {
             movies.sort(Comparator.comparing(Movie::getReleaseYear));
         } else if (choice == 2) {
             movies.sort(Comparator.comparing(Movie::getReleaseYear).reversed());
-        }
+
         for (Movie movie : movies) {
             System.out.println(movie);
         }
+        }else {
+            System.err.println("Некорректный выбор выерите 1 или 2");
+        }
+    }catch (InputMismatchException e) {
+        System.err.println("Ошибка: Некорректный ввод. Введите число.");
+        scan.nextLine();
+    } catch (IllegalArgumentException e) {
+        System.err.println("Ошибка: " + e.getMessage());
+    }
     }
 
     @Override
     public void sortByDirector() {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Выберите порядок: 1) от A до Z \n2) от Z до A ");
-        int choice = scan.nextInt();
-        List<Director> directors = database.getDirectors();
-        if (choice == 1) {
-            directors.sort(Comparator.comparing(Director::getDirName));
-        } else if (choice == 2) {
-            directors.sort(Comparator.comparing(Director::getDirName).reversed());
-        }
 
-        for (Director d : directors) {
-            System.out.println(d);
+        try {
+            System.out.println("Выберите порядок: \n1) от A до Z \n2) от Z до A ");
+            int choice = scan.nextInt();
+            List<Director> directors = database.getDirectors();
+            if (choice == 1) {
+                directors.sort(Comparator.comparing(Director::getDirName));
+            } else if (choice == 2) {
+                directors.sort(Comparator.comparing(Director::getDirName).reversed());
+            for (Director d : directors) {
+                System.out.println(d);
+            }
+            }else {
+                System.err.println("Некорректный выбор выерите 1 или 2");
+            }
+
+
+         }catch (InputMismatchException e) {
+            System.err.println("Ошибка: Некорректный ввод. Введите число.");
+            scan.nextLine();
+        } catch (IllegalArgumentException e) {
+            System.err.println("Ошибка: " + e.getMessage());
         }
     }
 }
