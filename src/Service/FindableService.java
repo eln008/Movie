@@ -2,7 +2,6 @@ package Service;
 
 import Inteface.Findable;
 import Model.Cast;
-import Model.DataBase;
 import Model.Director;
 import Model.Movie;
 import java.util.Scanner;
@@ -10,16 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FindableService implements Findable {
-    private final DataBase database;
 
-    public FindableService(DataBase database) {
-        this.database = database;
-    }
-
+List<Movie> movies = new ArrayList<>();
 
     @Override
-    public List<Movie> getAllMovies() {
-        return database.getMovies();
+    public List<Movie> getAllMovies(List<Movie> movies) {
+        return movies;
     }
 
 
@@ -29,7 +24,7 @@ public class FindableService implements Findable {
         System.out.println("Введите имя актера (например Brad): ");
         String name = scan.next();
         List<Movie> mmm = new ArrayList<>();
-        for (Movie m : database.getMovies()) {
+        for (Movie m : movies) {
             if (m.getTitle().contains(name)) {
                 mmm.add(m);
             }
@@ -43,7 +38,7 @@ public class FindableService implements Findable {
         System.out.println("Введите имя актера (например Brad): ");
         String name = scan.next();
         List<Movie> mmm = new ArrayList<>();
-        for (Movie m : database.getMovies()) {
+        for (Movie m : movies) {
             Cast cast = m.getCast();
             List<String> actors = cast.getActors();
             for (String actor : actors) {
@@ -62,7 +57,7 @@ public class FindableService implements Findable {
         System.out.println("Введите год: ");
         int num = scan.nextInt();
         List<Movie> matchingMovies = new ArrayList<>();
-        for (Movie m : database.getMovies()) {
+        for (Movie m : movies) {
             if (m.getReleaseYear() == num) {
                 matchingMovies.add(m);
             }
@@ -71,11 +66,11 @@ public class FindableService implements Findable {
     }
 
     @Override
-    public List<Movie> findMovieByDirector(List<Movie>movies) {
+    public List<Movie> findMovieByDirector(List<Director> directors) {
         Scanner scan = new Scanner (System.in);
         System.out.println("Введите имя режиссера: ");
         String name = scan.next();
-        for (Director d : database.getDirectors()) {
+        for (Director d : directors ) {
             if(d.getDirName().contains(name)){
                 return d.getMoviesDirected();
             }
@@ -88,7 +83,7 @@ public class FindableService implements Findable {
             System.out.println("Введите жанр например (Comedy): ");
             String name = scan.next();
         List<Movie> matchingMovies = new ArrayList<>();
-        for (Movie m : database.getMovies()) {
+        for (Movie m : movies) {
                 if(m.getGenre().contains(name)){
                     matchingMovies.add(m);
                 }
@@ -105,7 +100,7 @@ public class FindableService implements Findable {
         System.out.println("Введите роль (например Indiana): ");
         String role = scan.next();
         List<Movie> mmm = new ArrayList<>();
-        for (Movie m: database.getMovies()) {
+        for (Movie m: movies) {
             if(m.getCast().getRole().contains(role))
            mmm.add(m);
         }

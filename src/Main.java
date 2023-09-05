@@ -1,5 +1,4 @@
 import Model.Cast;
-import Model.DataBase;
 import Model.Director;
 import Model.Movie;
 import Service.FindableService;
@@ -60,12 +59,9 @@ public class Main {
         Director director10 = new Director("Steven Spielberg", List.of(movie10));
         List<Director> directors = Arrays.asList(director1, director2, director3, director4, director5, director6, director7, director8, director9, director10);
 
-        DataBase dataBase = new DataBase(movies, casts, directors);
-        dataBase.setCasts(casts);
-        dataBase.setMovies(movies);
-        dataBase.setDirectors(directors);
-        FindableService findableService = new FindableService(dataBase);
-        SortableService sortableService = new SortableService(dataBase);
+
+        FindableService findableService = new FindableService();
+        SortableService sortableService = new SortableService();
 
         Scanner scanner = new Scanner(System.in);
 
@@ -90,7 +86,7 @@ public class Main {
 
                 switch (choice) {
                     case 1:
-                        System.out.println(findableService.getAllMovies());
+                        System.out.println(findableService.getAllMovies(movies));
                         break;
                     case 2:
                         System.out.println(findableService.findMovieByActorName(movies));
@@ -102,7 +98,7 @@ public class Main {
                         System.out.println(findableService.findMovieByYear(movies));
                         break;
                     case 5:
-                        System.out.println(findableService.findMovieByDirector(movies));
+                        System.out.println(findableService.findMovieByDirector(directors));
                         break;
                     case 6:
                         System.out.println(findableService.findMovieByGenre(movies));
@@ -111,13 +107,13 @@ public class Main {
                         System.out.println(findableService.findMovieByRole(movies));
                         break;
                     case 8:
-                        sortableService.sortByMovieName();
+                        sortableService.sortByMovieName(movies);
                         break;
                     case 9:
-                        sortableService.sortByYear();
+                        sortableService.sortByYear(movies);
                         break;
                     case 10:
-                        sortableService.sortByDirector();
+                        sortableService.sortByDirector(directors);
                         break;
                     case 0:
                         System.exit(0);
@@ -135,4 +131,3 @@ public class Main {
 }
 
 
-//        System.out.println(findableService.findMovieByGenre("Comedy")); //как сделать так чтобы jy vju yf[jlbn yfpdfybz с малленькими буквами
